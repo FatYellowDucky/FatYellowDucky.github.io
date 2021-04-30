@@ -17,16 +17,7 @@
 	} 100% {
 		left: 5px;
 	}
-} a:link {
-	color: rgb(0, 0, 0);
-	font-family: Arial, Helvetica, sans-serif;
-} a:visited {
-	color: rgb(0, 0, 0);
-	font-family: Arial, Helvetica, sans-serif;
-} a:hover {
-	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(0, 0, 0);
-}  body{
+}body{
 	background-color: rgb(0, 150, 0);
 	overflow-y: scroll;
 	overflow-x: scroll;
@@ -44,4 +35,15 @@
 	position: relative;
 	animation-timing-function: linear;
 	animation: backforth 2s infinite;
+}a{
+    &:hover {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+    } &:visited {
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    } &:link {
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }

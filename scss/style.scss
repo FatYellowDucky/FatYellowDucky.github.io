@@ -1,14 +1,16 @@
 @keyframes backforth {
+	$mip: 5px;
+	$map: 120px;
 	0% {
-		left: 5px;
+		left: $mip;
 	} 25% {
-		left: 120px;
+		left: $map;
 	} 50% {
-		left: 5px;
+		left: $mip;
 	} 75% {
-		left: 120px;
+		left: $map;
 	} 100% {
-		left: 5px;
+		left: $mip;
 	}
 } body{
 	background-color: rgb(0, 150, 0);
@@ -30,18 +32,21 @@
 } .defualtText {
 	font-family: Arial, Helvetica, sans-serif;
 	color: rgb(0, 70, 0);
-} a:link {
-	color: rgb(0, 126, 19);
-	font-family: Arial, Helvetica, sans-serif;
-	text-decoration: none;
-} a:visited {
-	color:rgb(0, 126, 19);
-	font-family: Arial, Helvetica, sans-serif;
-	text-decoration: none;
-} a:hover {
-	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(0, 190, 190);
-} .bar{
+}a{
+	$color: rgb(0, 126, 19);
+	&:link {
+		color: $color;
+		font-family: Arial, Helvetica, sans-serif;
+		text-decoration: none;
+	} &:visited {
+		color: $color;
+		font-family: Arial, Helvetica, sans-serif;
+		text-decoration: none;
+	} &:hover {
+		font-family: Arial, Helvetica, sans-serif;
+		color: rgb(0, 190, 190);
+	}
+}.bar{
 	width: 135px;
 	height: 10px;
 	border-radius: 5px;
@@ -52,5 +57,4 @@
 	border-radius: 5px;
 	padding: 5px 10px;
 	width: 140px;
-	height: 120px;
 }

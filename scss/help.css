@@ -1,0 +1,57 @@
+body {
+  background-color: #009600;
+  overflow-y: scroll;
+  overflow-x: scroll; }
+
+@keyframes backforth {
+  0% {
+    left: 5px; }
+  25% {
+    left: 120px; }
+  50% {
+    left: 5px; }
+  75% {
+    left: 120px; }
+  100% {
+    left: 5px; } }
+.bar {
+  width: 135px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: rgba(95, 211, 0, 0.486);
+  padding: 5px 0px; }
+
+.sphere {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: lime;
+  position: relative;
+  padding: 0px 0px;
+  animation-timing-function: linear;
+  animation: backforth 2s infinite; }
+
+.helpbg {
+  padding: 10px 5px;
+  overflow: hide;
+  width: 210px;
+  border-radius: 10px;
+  background-color: rgba(136, 255, 0, 0.452); }
+
+.defualtText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #004600; }
+
+a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0173a0; }
+a:visited {
+  color: #00648c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; }
+a:link {
+  color: #00648c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; }
+
+/*# sourceMappingURL=help.css.map */
