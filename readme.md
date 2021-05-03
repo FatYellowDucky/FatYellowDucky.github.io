@@ -1,5 +1,5 @@
 # scss & css<br>
-why have a folser for scss and css<br>
+why have a folder for scss and css<br>
 why that's for my computer memory<br>
 one scss file need's one other file<br>
 to get compiled and used. im not<br>
